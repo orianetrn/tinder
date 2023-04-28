@@ -1,0 +1,351 @@
+@import url("https://use.typekit.net/ejy0xqq.css");
+
+/*POO*/
+.white {
+    color: white;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+/*GLOBAL*/
+body {
+    margin: 0;
+    font-family: proxima-nova, sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 70px;
+    text-shadow: rgba(0,0,0, 0.2) 5px 12px 5px;
+}
+
+h2 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.bloc3 {
+    width: calc((100% / 3) - 50px);
+    text-align: center;
+}
+
+/*HEADER*/
+.banniere {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-banniere {
+    text-align: center;
+}
+
+.style-boutton {
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    background: linear-gradient(70deg, #BA3A6C,#F87A59);
+    border-radius: 80px;
+    text-decoration: none;
+    box-shadow: rgba(0,0,0, 0.2) 5px 12px 5px;
+}
+
+.style-boutton:hover {
+    background: linear-gradient(-30deg, #BA3A6C,#F87A59);
+    padding: 25px;
+}
+
+#bouton-app {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border: solid white;
+    border-radius: 40px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+#bouton-app:hover {
+    background-color: white;
+    color: black;
+}
+
+/*TIMER*/
+.container-countdown {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+    margin-top: 50px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.numbers {
+    margin: 0;
+    font-size: 45px;
+}
+
+.time p {
+    margin: 0;
+    font-size: 12px;
+}
+
+#p-timer {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+/*PROFIL*/
+.container-profil {
+    height: 110vh;
+    background: linear-gradient(70deg, #202020, #343434);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-picture-profil{
+    justify-content: center;
+}
+
+.picture-profil{
+    width: 95%;
+    margin: 150px;
+}
+
+.h2-profil {
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*AVANT PREMIERE*/
+#container-avp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -150px;
+}
+
+#mockup-phone1 {
+    width: 100%;
+}
+
+#mockup-phone2 {
+    width: 70%;
+    margin-top: 50px;
+}
+
+/*formulaire*/
+.form-box {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.form-box .input-form {
+    position: relative;
+}
+
+.form-box .input-form input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 2px solid #F87A59;
+    outline: none;
+    background: transparent;
+}
+
+.form-box .input-form label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form-box .input-form input:focus ~ label,
+.form-box .input-form input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #F87A59;
+    font-size: 12px;
+}
+
+.button-form {
+    color: #BA3A6C;
+    font-size: 20px;
+    background-color:transparent;
+    border: none;
+    margin-left: 335px;
+}
+
+.button-form:hover {
+    color: #F87A59;
+}
+
+    /*FOOTER*/
+.footer {
+    display: flex;
+    background: linear-gradient(70deg, #202020, #343434);
+    color: white;
+    margin-top: -6px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.download {
+    height: 40%;
+    display: flex;
+}
+
+#appstore, #googleplay {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.image-footer {
+    height: 40%;
+}
+
+#logo-footer {
+    height: 100%;
+}
+
+.reseaux-footer img {
+    width: 25px;
+    margin: 10px;
+}
+
+.reseaux-footer a {
+    text-decoration: none;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 40px;
+        text-shadow: rgba(0,0,0, 0.2) 5px 10px 5px;
+    }
+
+    h2 {
+        font-size: 25px;
+        margin: 30px;
+    }
+
+    /*HEADER*/
+    .style-boutton {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .style-boutton:hover {
+        background: linear-gradient(-30deg, #BA3A6C,#F87A59);
+        padding: 20px;
+    }
+
+    /*TIMER*/
+    .numbers {
+        font-size: 25px;
+    }
+
+    .time p {
+        font-size: 9px;
+    }
+
+    #p-timer {
+        font-size: 12px;
+        margin-top: 50px;
+    }
+
+    /*PROFIL*/
+    .container-profil {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-picture-profil{
+        width: 70%;
+    }
+
+    .picture-profil{
+        width: 100%;
+        margin: 0;
+    }
+
+    .h2-profil {
+        font-size: 25px;
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    /*formulaire*/
+    .form-box {
+        width: 200px;
+        margin-top: 170px;
+        margin-bottom: 75px;
+    }
+
+    .form-box .input-form input {
+        font-size: 10px;
+    }
+
+    .form-box .input-form label {
+        font-size: 15px;
+    }
+
+    #mockup-phone1, #mockup-phone2 {
+        display: none;
+    }
+
+    .button-form {
+        font-size: 15px;
+        margin-left: 150px;
+    }
+
+    /*FOOTER*/
+    #appstore, #googleplay {
+        height: 70%;
+    }
+
+    #logo-footer {
+        height: 70%;
+    }
+
+    .reseaux-footer img {
+        width: 15px;
+        margin: 5px;
+    }
+}

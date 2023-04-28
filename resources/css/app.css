@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-tinder {
+    background: linear-gradient(70deg, #BA3A6C, #F87A59);
+}
